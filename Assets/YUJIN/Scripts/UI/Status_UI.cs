@@ -10,9 +10,13 @@ public class Status_UI : MonoBehaviour
     [SerializeField] TextMeshProUGUI hp;
     [SerializeField] TextMeshProUGUI ctk;
 
-    public Knight knight;
 
     void Start()
+    {
+        ShowStatInfo();
+    }
+
+    private void OnEnable()
     {
         ShowStatInfo();
     }
